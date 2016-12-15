@@ -1,0 +1,7 @@
+## Software
+
+docker run -it --rm -v $PWD:/opt/src --entrypoint=/opt/src/build-kafka-manager.sh rawmind/alpine-jdk8:1.8.112
+
+## Docker
+
+docker build -t rawmind/alpine-kafka-manager:$(cat version) .
